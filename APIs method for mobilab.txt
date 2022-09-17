@@ -1,0 +1,140 @@
+For Signup
+
+URL: http://127.0.0.1:8000/usersignup
+Request Type: POST
+Send data: Body -> raw -> json
+JSON object:
+{
+    "UserID": 1,
+    "UserFirstName": "Muhammad",
+    "UserLastName": "Saad",
+    "UserEmail": "saad@email.com",
+    "UserPassword": "saad4321"
+}
+
+##################################################
+
+For Login
+
+URL: http://127.0.0.1:8000/userlogin
+Request Type: POST
+Send data: Body -> raw -> json
+JSON object:
+{
+    "UserEmail": "saad@email.com",
+    "UserPassword": "saad4321"
+}
+
+##################################################
+
+For User Number
+
+URL: http://127.0.0.1:8000/userdetails
+Request Type: GET
+Send data: Body -> raw -> json
+JSON object:
+{
+    "UserEmail": "saad@email.com"
+}
+
+##################################################
+
+To view All data
+
+Laptops:
+URL: http://127.0.0.1:8000/laptop
+Request Type: GET
+
+Mobile:
+URL: http://127.0.0.1:8000/mobile
+Request Type: GET
+
+##################################################
+
+To add Data
+
+Laptop:
+URL: http://127.0.0.1:8000/laptop
+Request Type: POST
+Send data: Body -> raw -> json
+JSON object: 
+{
+    "LaptopName": "Dell",
+    "LaptopImage": "5.png",
+    "LaptopScreenSize": 14.5,
+    "LaptopScreenResolution": 120000.0,
+    "LaptopRam": 8.0,
+    "LaptopHDD": 1000.0,
+    "LaptopSSD": 128,
+    "LaptopDetails": "Condition 8/10",
+    "LaptopPrice": 90000.0
+}
+
+Mobile
+URL: http://127.0.0.1:8000/mobile
+Request Type: POST
+Send data: Body -> raw -> json
+JSON object: 
+{
+    "MobileName": "Samsung",
+    "MobileImage": null,
+    "MobileRom": "4",
+    "MobileScreen": 14.5,
+    "MobilePrimaryCam": 12.0,
+    "MobileSalfieCam": 5.0,
+    "MobileBattery": 5000.0,
+    "MobileDetails": "Condition 8/10",
+    "MobilePrice": 50000.0
+}
+
+##################################################
+
+To Update Data
+
+Laptop:
+URL: http://127.0.0.1:8000/laptop
+Request Type: PUT
+Send data: Body -> raw -> json
+JSON object: 
+{
+    "LaptopId": 3,
+    "LaptopName": "Dell",
+    "LaptopImage": "5.png",
+    "LaptopScreenSize": 14.5,
+    "LaptopScreenResolution": 120000.0,
+    "LaptopRam": 8.0,
+    "LaptopHDD": 1000.0,
+    "LaptopSSD": 128,
+    "LaptopDetails": "Condition 8/10",
+    "LaptopPrice": 90000.0
+}
+
+Mobile
+URL: http://127.0.0.1:8000/mobile
+Request Type: PUT
+Send data: Body -> raw -> json
+JSON object: 
+{
+    "MobileId": 2,
+    "MobileName": "Samsung",
+    "MobileImage": null,
+    "MobileRom": "4",
+    "MobileScreen": 14.5,
+    "MobilePrimaryCam": 12.0,
+    "MobileSalfieCam": 5.0,
+    "MobileBattery": 5000.0,
+    "MobileDetails": "Condition 8/10",
+    "MobilePrice": 50000.0
+}
+
+##################################################
+
+To Delete data
+
+Laptops:
+URL: http://127.0.0.1:8000/laptop/Id
+Request Type: DELETE
+
+Mobile:
+URL: http://127.0.0.1:8000/mobile/id
+Request Type: DELETE
